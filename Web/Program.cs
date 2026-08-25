@@ -10,6 +10,12 @@ builder.Services.AddControllers();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
 
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddSingleton<IProductRepository, ProductRepository>();
+
+builder.Services.AddScoped<CategoryService>();
+builder.Services.AddSingleton<ICategoryRepository, CategoryRepository>();
+
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
@@ -20,9 +26,6 @@ builder.Services.AddSwaggerGen(options =>
         Version = "v1"
     });
 });
-
-builder.Services.AddScoped<ProductService>();
-builder.Services.AddSingleton<IProductRepository, ProductRepository>();
 
 var app = builder.Build();
 
