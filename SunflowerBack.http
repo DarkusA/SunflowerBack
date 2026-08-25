@@ -1,0 +1,6 @@
+@SunflowerBack_HostAddress = http://localhost:5148
+
+GET {{SunflowerBack_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

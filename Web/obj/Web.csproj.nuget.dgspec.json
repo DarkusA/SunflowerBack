@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Web\\Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Web\\Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Web\\Web.csproj",
+        "projectName": "Web",
+        "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Web\\Web.csproj",
+        "packagesPath": "C:\\Users\\Ramiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ramiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Application\\Application.csproj"
+              },
+              "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Ramiro\\Desktop\\Programacion\\Visual Studio Code\\ProyectoDeLaboratorio\\SUNFLOWERTP\\SunflowerBack\\Infrastructure\\Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
