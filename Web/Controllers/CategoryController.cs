@@ -24,7 +24,14 @@ public class CategoryController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetCategoryById(int id)
     {
-        return Ok(_categoryService.GetCategory(id));
+        CategoryDto? category = _categoryService.GetCategory(id);
+
+        if (category == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(category);
     }
 
     [HttpPost]
@@ -37,14 +44,26 @@ public class CategoryController : ControllerBase
     [HttpPut("{id:int}")]
     public IActionResult UpdateCategory(int id, CreateAndUpdateCategoryDto category)
     {
-        _categoryService.UpdateCategory(id, category);
+        bool isUpdated = _categoryService.UpdateCategory(id, category);
+
+        if (!isUpdated)
+        {
+            return NotFound();
+        }
+
         return Ok();
     }
 
     [HttpDelete("{id:int}")]
     public IActionResult DeleteCategory(int id)
     {
-        _categoryService.DeleteCategory(id);
+        bool isDeleted = _categoryService.DeleteCategory(id);
+
+        if (!isDeleted)
+        {
+            return NotFound();
+        }
+
         return Ok();
     }
 }

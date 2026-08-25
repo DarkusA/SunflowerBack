@@ -28,9 +28,14 @@ public class UserService //No tiene interfaz, consultar luego
             .ToList();
     }
 
-    public UserDto GetUser(int id)
+    public UserDto? GetUser(int id)
     {
         User? userById = _userRepository.Get(id);
+
+        if (userById == null)
+        {
+            return null;
+        }
 
         return new UserDto
         {
@@ -54,22 +59,35 @@ public class UserService //No tiene interfaz, consultar luego
         );
     }
 
-    public void UpdateUser(int id, UpdateUserDto user)
+    public bool UpdateUser(int id, UpdateUserDto user)
     {
         User? userToUpdate = _userRepository.Get(id);
-
+    
+        if (userToUpdate == null)
+        {
+            return false;
+        }
+    
         userToUpdate.Username = user.Username;
         userToUpdate.Email = user.Email;
         userToUpdate.Password = user.Password;
         userToUpdate.Role = user.Role; //Revisar esto
 
         _userRepository.Update(userToUpdate);
+
+        return true;
     }
 
-    public void DeleteUser(int id)
+    public bool DeleteUser(int id)
     {
         User? userToDelete = _userRepository.Get(id);
+    
+        if (userToDelete == null)
+        {
+            return false;
+        }
 
         _userRepository.Delete(userToDelete);
+        return true;
     }
 }

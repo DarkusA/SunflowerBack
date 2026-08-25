@@ -24,7 +24,14 @@ public class UserController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetUserById(int id)
     {
-        return Ok(_userService.GetUser(id));
+        UserDto? user = _userService.GetUser(id);
+
+        if (user == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(user);
     }
 
     [HttpPost]
@@ -37,7 +44,12 @@ public class UserController : ControllerBase
     [HttpPut("{id:int}")]
     public IActionResult UpdateUser(int id, UpdateUserDto user)
     {
-        _userService.UpdateUser(id, user);
+        bool isUpdated = _userService.UpdateUser(id, user);
+
+        if (!isUpdated)
+        {
+            return NotFound();
+        }
 
         return Ok();
     }
@@ -45,7 +57,12 @@ public class UserController : ControllerBase
     [HttpDelete("{id:int}")]
     public IActionResult DeleteUser(int id)
     {
-        _userService.DeleteUser(id);
+        bool isDeleted = _userService.DeleteUser(id);
+
+        if (!isDeleted)
+        {
+            return NotFound();
+        }
 
         return Ok();
     }

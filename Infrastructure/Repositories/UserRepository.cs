@@ -5,6 +5,7 @@ namespace Infrastructure.Repositories;
 
 public class UserRepository : BaseRepository<User>, IUserRepository
 {
+    private int _nextId = 1;
     public User? Get(int id)
     {
         return _items.FirstOrDefault(u => u.Id == id);
@@ -12,7 +13,7 @@ public class UserRepository : BaseRepository<User>, IUserRepository
 
     public void Add(User user)
     {
-        user.Id = _items.Count + 1;
+        user.Id = _nextId++;
         _items.Add(user);
     }
 

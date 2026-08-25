@@ -27,9 +27,14 @@ public class CategoryService
             .ToList();
     }
 
-    public CategoryDto GetCategory(int id)
+    public CategoryDto? GetCategory(int id)
     {
         Category? category = _categoryRepository.Get(id);
+
+        if (category == null)
+        {
+            return null;
+        }
 
         return new CategoryDto
         {
@@ -50,20 +55,32 @@ public class CategoryService
         );
     }
 
-    public void UpdateCategory(int id, CreateAndUpdateCategoryDto category)
+    public bool UpdateCategory(int id, CreateAndUpdateCategoryDto category)
     {
         Category? categoryToUpdate = _categoryRepository.Get(id);
+
+        if (categoryToUpdate == null)
+        {
+            return false;
+        }
 
         categoryToUpdate.Name = category.Name;
         categoryToUpdate.Description = category.Description;
 
         _categoryRepository.Update(categoryToUpdate);
+        return true;
     }
 
-    public void DeleteCategory(int id)
+    public bool DeleteCategory(int id)
     {
         Category? categoryToDelete = _categoryRepository.Get(id);
 
+        if (categoryToDelete == null)
+        {
+            return false;
+        }
+        
         _categoryRepository.Delete(categoryToDelete);
+        return true;
     }
 }

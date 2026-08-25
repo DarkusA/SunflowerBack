@@ -5,6 +5,7 @@ namespace Infrastructure.Repositories;
 
 public class ProductRepository : BaseRepository<Product>, IProductRepository
 {
+    private int _nextId = 1;
     public Product? Get(int id)
     {
         return _items.FirstOrDefault(p => p.Id == id);
@@ -12,7 +13,7 @@ public class ProductRepository : BaseRepository<Product>, IProductRepository
 
     public void Add(Product product)
     {
-        product.Id = _items.Count + 1;
+        product.Id = _nextId++;
         _items.Add(product);
     }
 

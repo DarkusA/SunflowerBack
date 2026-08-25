@@ -24,7 +24,14 @@ public class ProductController : ControllerBase
     [HttpGet("{id:int}")]
     public IActionResult GetProductById(int id)
     {
-        return Ok(_productService.GetProduct(id));
+        ProductDto? product = _productService.GetProduct(id);
+
+        if (product == null)
+        {
+            return NotFound();
+        }
+
+        return Ok(product);
     }
 
     [HttpPost]
@@ -37,14 +44,26 @@ public class ProductController : ControllerBase
     [HttpPut("{id:int}")]
     public IActionResult UpdateProduct(int id, CreateAndUpdateProductDto product)
     {
-        _productService.UpdateProduct(id, product);
+        bool isUpdated = _productService.UpdateProduct(id, product);
+
+        if (!isUpdated)
+        {
+            return NotFound();
+        }
+
         return Ok();
     }
 
     [HttpDelete("{id:int}")]
     public IActionResult DeleteProduct(int id)
     {
-        _productService.DeleteProduct(id);
+        bool isDeleted = _productService.DeleteProduct(id);
+
+        if (!isDeleted)
+        {
+            return NotFound();
+        }
+
         return Ok();
     }
 }

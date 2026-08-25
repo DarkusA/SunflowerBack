@@ -5,6 +5,7 @@ namespace Infrastructure.Repositories;
 
 public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
 {
+    private int _nextId = 1;
     public Category? Get(int id)
     {
         return _items.FirstOrDefault(c => c.Id == id);
@@ -12,7 +13,7 @@ public class CategoryRepository : BaseRepository<Category>, ICategoryRepository
 
     public void Add(Category category)
     {
-        category.Id = _items.Count + 1;
+        category.Id = _nextId++;
         _items.Add(category);
     }
 

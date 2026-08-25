@@ -30,9 +30,14 @@ public class ProductService
             .ToList();
     }
 
-    public ProductDto GetProduct(int id)
+    public ProductDto? GetProduct(int id)
     {
         Product? productById = _productRepository.Get(id);
+
+        if (productById == null)
+        {
+            return null;
+        }
 
         return new ProductDto
         {
@@ -59,9 +64,14 @@ public class ProductService
         );
     }
 
-    public void UpdateProduct(int id, CreateAndUpdateProductDto product)
+    public bool UpdateProduct(int id, CreateAndUpdateProductDto product)
     {
         Product? productToUpdate = _productRepository.Get(id);
+
+        if (productToUpdate == null)
+        {
+            return false;
+        }
 
         productToUpdate.Name = product.Name;
         productToUpdate.Description = product.Description;
@@ -70,12 +80,20 @@ public class ProductService
         productToUpdate.CategoryId = product.CategoryId;
 
         _productRepository.Update(productToUpdate);
+        
+        return true;
     }
 
-    public void DeleteProduct(int id)
+    public bool DeleteProduct(int id)
     {
         Product? productToDelete = _productRepository.Get(id);
 
+        if (productToDelete == null)
+        {
+            return false;
+        }
+
         _productRepository.Delete(productToDelete);
+        return true;
     }
 }
