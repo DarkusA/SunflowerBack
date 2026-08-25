@@ -30,3 +30,4 @@ C:\Users\Ramiro\Desktop\Programacion\Visual Studio Code\ProyectoDeLaboratorio\SU
 C:\Users\Ramiro\Desktop\Programacion\Visual Studio Code\ProyectoDeLaboratorio\SUNFLOWERTP\SunflowerBack\obj\Debug\net9.0\SunflowerBack.pdb
 C:\Users\Ramiro\Desktop\Programacion\Visual Studio Code\ProyectoDeLaboratorio\SUNFLOWERTP\SunflowerBack\obj\Debug\net9.0\SunflowerBack.genruntimeconfig.cache
 C:\Users\Ramiro\Desktop\Programacion\Visual Studio Code\ProyectoDeLaboratorio\SUNFLOWERTP\SunflowerBack\obj\Debug\net9.0\ref\SunflowerBack.dll
+C:\Users\Ramiro\Desktop\Programacion\Visual Studio Code\ProyectoDeLaboratorio\SUNFLOWERTP\SunflowerBack\obj\Debug\net9.0\SunflowerBack.sourcelink.json
