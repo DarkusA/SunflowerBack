@@ -21,6 +21,9 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+builder.Services.AddScoped<ProductService>();
+builder.Services.AddSingleton<IProductRepository, ProductRepository>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
